@@ -1,0 +1,1063 @@
+{
+    "objectIdFieldName": "OBJECTID",
+    "globalIdFieldName": "",
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+        "wkid": 25833,
+        "latestWkid": 25833
+    },
+    "fields": [
+        {
+            "name": "Navn",
+            "alias": "Navn",
+            "type": "esriFieldTypeString",
+            "length": 50
+        },
+        {
+            "name": "Url",
+            "alias": "Url",
+            "type": "esriFieldTypeString",
+            "length": 500
+        },
+        {
+            "name": "Gatenavn",
+            "alias": "Gatenavn",
+            "type": "esriFieldTypeString",
+            "length": 30
+        },
+        {
+            "name": "Husnummer",
+            "alias": "Husnummer",
+            "type": "esriFieldTypeString",
+            "length": 5
+        },
+        {
+            "name": "Bokstav",
+            "alias": "Bokstav",
+            "type": "esriFieldTypeString",
+            "length": 5
+        }
+    ],
+    "features": [
+        {
+            "attributes": {
+                "Navn": "Åpen internasjonal kulturbarnehage",
+                "Url": "*",
+                "Gatenavn": "Holbergsgate",
+                "Husnummer": "23",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33185.72766211105,
+                "y": 6560417.572772735,
+                "latitude": 58.85065257036298,
+                "longitude": 5.740634683791784
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Tripp Trapp åpen barnehage",
+                "Url": "*",
+                "Gatenavn": "Åsveien",
+                "Husnummer": "124",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -31996.273004114395,
+                "y": 6561767.527361532,
+                "latitude": 58.864088321175146,
+                "longitude": 5.757764907266353
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sviland Fus barnehage AS",
+                "Url": "*",
+                "Gatenavn": "Svilandveien",
+                "Husnummer": "215",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -28958.63698179077,
+                "y": 6557105.607783163,
+                "latitude": 58.82649727563064,
+                "longitude": 5.820787912775619
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Bogafjell Åpne barnehage",
+                "Url": "*",
+                "Gatenavn": "Lyngholen",
+                "Husnummer": "3",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33301.4753691497,
+                "y": 6557039.644761498,
+                "latitude": 58.820567956068146,
+                "longitude": 5.746709873567664
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Espira Krystallveien barnehage",
+                "Url": "http://www.espira.no",
+                "Gatenavn": "Krystallveien",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -35404.64249462751,
+                "y": 6558648.622006129,
+                "latitude": 58.832224853343554,
+                "longitude": 5.706920201034806
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandvedhaugen barnehage",
+                "Url": "*",
+                "Gatenavn": "Gamle Asheimvei",
+                "Husnummer": "15",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34684.13852690952,
+                "y": 6559610.335368852,
+                "latitude": 58.84164225886974,
+                "longitude": 5.7169374315990495
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Læringsverkstedet Bratteborg barnehage",
+                "Url": "*",
+                "Gatenavn": "Brattebøveien",
+                "Husnummer": "8",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32551.6813667682,
+                "y": 6557349.038449396,
+                "latitude": 58.82423626823539,
+                "longitude": 5.758788371858366
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Espira Sandtoppen naturbarnehage AS",
+                "Url": "http://www.sandtoppen.no",
+                "Gatenavn": "Sandvikbakken",
+                "Husnummer": "21",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -31369.98423571745,
+                "y": 6562424.883720166,
+                "latitude": 58.870688203514916,
+                "longitude": 5.766917101665052
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Læringsverkstedet Julebygda barnehage",
+                "Url": "http://www.laringsverkstedet.no/julebygda",
+                "Gatenavn": "Heigreveien",
+                "Husnummer": "401",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -38227.08023229323,
+                "y": 6559012.878652258,
+                "latitude": 58.83194136229816,
+                "longitude": 5.657802649067703
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Brueland barnehage",
+                "Url": "http://www.sandnes.kommune.no/bruelandbhg",
+                "Gatenavn": "Samuel J. Sandvedsvei",
+                "Husnummer": "2-4",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34001.59289388405,
+                "y": 6559617.951560482,
+                "latitude": 58.842555419312106,
+                "longitude": 5.728590578664023
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Stangeland barnehage",
+                "Url": "*",
+                "Gatenavn": "Agneveien",
+                "Husnummer": "1",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34388.25891308207,
+                "y": 6560627.650700539,
+                "latitude": 58.85102572761291,
+                "longitude": 5.71956417260463
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Varatun barnehage Varatunhagen",
+                "Url": "*",
+                "Gatenavn": "Varatunhagen",
+                "Husnummer": "53",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33482.294679940096,
+                "y": 6562175.383278383,
+                "latitude": 58.86586620956548,
+                "longitude": 5.731362473155508
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lundegård barnehage SA",
+                "Url": "http://www.lundegardbarnehage.no",
+                "Gatenavn": "Haugen",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34534.24765120598,
+                "y": 6557869.182696277,
+                "latitude": 58.82639566499694,
+                "longitude": 5.723661575584799
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Ganddal barnehage",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/ganddal-barnehagene-avdeling-Ganddal-barnehage/",
+                "Gatenavn": "Kvålveien",
+                "Husnummer": "11",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -35060.122335908585,
+                "y": 6557230.731071462,
+                "latitude": 58.820085266818374,
+                "longitude": 5.716199637328439
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Varatun barnehage",
+                "Url": "*",
+                "Gatenavn": "Postveien",
+                "Husnummer": "136",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33284.470628506504,
+                "y": 6562068.008353229,
+                "latitude": 58.86515936969743,
+                "longitude": 5.73500420732244
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Gravarslia barnehage",
+                "Url": "*",
+                "Gatenavn": "Gravarstunet",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33041.6951592532,
+                "y": 6560136.60987793,
+                "latitude": 58.84834026124102,
+                "longitude": 5.743768651849013
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Buggeland barnehage SA",
+                "Url": "http://www.buggeland-barnehage.no",
+                "Gatenavn": "Buggelandsbakken",
+                "Husnummer": "145",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32959.64350598201,
+                "y": 6556544.870417609,
+                "latitude": 58.81660441888054,
+                "longitude": 5.753729711688841
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lundehagen Fus barnehage",
+                "Url": "*",
+                "Gatenavn": "Akselhagen",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -35654.83546620887,
+                "y": 6557314.557582478,
+                "latitude": 58.820090637942,
+                "longitude": 5.705836534992644
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Læringsverkstedet Vatnekrossen barnehage",
+                "Url": "http://laringsverkstedet.no/barnehage/vatnekrossen",
+                "Gatenavn": "Hanamyrveien",
+                "Husnummer": "23",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -31211.08667173097,
+                "y": 6560713.779937831,
+                "latitude": 58.8557160204461,
+                "longitude": 5.773708896861031
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Figgjoelva barnehage",
+                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes2/kommunale-barnehager/",
+                "Gatenavn": "Tjessheimveien",
+                "Husnummer": "8",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -29947.278553414624,
+                "y": 6552836.129934841,
+                "latitude": 58.78743300510405,
+                "longitude": 5.813983177210125
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Røyrvik gårdsbarnehage AS",
+                "Url": "http://royrvik-gard.no",
+                "Gatenavn": "Røyrvikveien",
+                "Husnummer": "1",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34720.41999813693,
+                "y": 6555368.129985866,
+                "latitude": 58.80399720704856,
+                "longitude": 5.72645101968719
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sørbø barnehage",
+                "Url": "*",
+                "Gatenavn": "Sørbøveien",
+                "Husnummer": "59",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34056.103473680676,
+                "y": 6557839.672987965,
+                "latitude": 58.826726100383354,
+                "longitude": 5.73190463072645
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Kreativ barnehage Hove",
+                "Url": "*",
+                "Gatenavn": "Hafrakveien",
+                "Husnummer": "11",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34023.36771232926,
+                "y": 6558474.23458644,
+                "latitude": 58.832391100935084,
+                "longitude": 5.73094956935497
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Langgata barnehage",
+                "Url": "*",
+                "Gatenavn": "Langgata",
+                "Husnummer": "74",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33231.263921650476,
+                "y": 6560964.105520263,
+                "latitude": 58.85544057651186,
+                "longitude": 5.738551147756731
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Kleivane barnehage",
+                "Url": "*",
+                "Gatenavn": "Kvernhusbakken",
+                "Husnummer": "1",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -31767.38970117527,
+                "y": 6558233.2782510575,
+                "latitude": 58.83304178500736,
+                "longitude": 5.770092866967926
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sørbø barnehage Nord",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/ganddal-barnahagene-sorbo-barnehage/",
+                "Gatenavn": "Harahaugane",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34071.76985212951,
+                "y": 6558071.415886378,
+                "latitude": 58.82876078282102,
+                "longitude": 5.731083736221468
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Hans og Grete barnehage SA",
+                "Url": "*",
+                "Gatenavn": "Foren",
+                "Husnummer": "51",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -35153.89673638216,
+                "y": 6560614.108058634,
+                "latitude": 58.84995602440793,
+                "longitude": 5.706501577991698
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Håbet Fus barnehage",
+                "Url": "http://www.haabet-barnehage.no",
+                "Gatenavn": "Håbafjellveien",
+                "Husnummer": "39",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32845.32546737802,
+                "y": 6557522.549180522,
+                "latitude": 58.8254118456009,
+                "longitude": 5.753356169332277
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Figgjo barnehage",
+                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes2/kommunale-barnehager/Sor-ost-barneha",
+                "Gatenavn": "Utslåtten",
+                "Husnummer": "2",
+                "Bokstav": "A"
+            },
+            "geometry": {
+                "x": -29992.194023073767,
+                "y": 6552449.425201191,
+                "latitude": 58.78394951781528,
+                "longitude": 5.814129478340897
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Aktiv barnehage",
+                "Url": "http://www.aktiv-barnehage.no",
+                "Gatenavn": "Gamle Somavei",
+                "Husnummer": "26",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33946.94447439676,
+                "y": 6562829.725627094,
+                "latitude": 58.87109029760132,
+                "longitude": 5.721845887938132
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Rabalder barnehage",
+                "Url": "*",
+                "Gatenavn": "Porsmyrveien",
+                "Husnummer": "7",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33488.961004985846,
+                "y": 6563708.931477037,
+                "latitude": 58.8794505070933,
+                "longitude": 5.727580941775509
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Espira Lura barnehage",
+                "Url": "http://www.espira.no",
+                "Gatenavn": "Midtbergmyrå",
+                "Husnummer": "6",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33463.65919914027,
+                "y": 6564673.591379614,
+                "latitude": 58.88803200333362,
+                "longitude": 5.7257054589810945
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Trones barnehage",
+                "Url": "*",
+                "Gatenavn": "Postveien",
+                "Husnummer": "63",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33586.042322863825,
+                "y": 6561035.709367635,
+                "latitude": 58.85563622009158,
+                "longitude": 5.7323109460519674
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Myklaberget barnehage",
+                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes2/kommunale-barnehager/gandsfjord-barn",
+                "Gatenavn": "Smørbukkveien",
+                "Husnummer": "11",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33009.30488503189,
+                "y": 6564247.782359955,
+                "latitude": 58.88482061065046,
+                "longitude": 5.734503694366359
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Svanholmen Kanvas-barnehage",
+                "Url": "*",
+                "Gatenavn": "Svanholmen",
+                "Husnummer": "8",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34495.59418952756,
+                "y": 6564936.74834211,
+                "latitude": 58.88908438954153,
+                "longitude": 5.707405695961275
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Myrsnipa barnehage",
+                "Url": "http://www.myrsnipa.barnehage.no",
+                "Gatenavn": "Porsholen",
+                "Husnummer": "2",
+                "Bokstav": "A"
+            },
+            "geometry": {
+                "x": -33265.46875416383,
+                "y": 6563691.078302334,
+                "latitude": 58.879569074872805,
+                "longitude": 5.7314495062964275
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Hommersåk barnehage",
+                "Url": "*",
+                "Gatenavn": "Teineveien",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -25848.26532413985,
+                "y": 6568083.264693887,
+                "latitude": 58.92763531304105,
+                "longitude": 5.848082413660028
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Austrått barnehage",
+                "Url": "*",
+                "Gatenavn": "Øygardsveien",
+                "Husnummer": "162",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32236.498998177587,
+                "y": 6559561.454261918,
+                "latitude": 58.84423666367761,
+                "longitude": 5.758910906614069
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Jønningheia barnehage",
+                "Url": "*",
+                "Gatenavn": "Tulipanveien",
+                "Husnummer": "13",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34178.40097165841,
+                "y": 6561559.861554214,
+                "latitude": 58.859548266419246,
+                "longitude": 5.720923998274326
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Riska barnehage",
+                "Url": "*",
+                "Gatenavn": "Kydnaveien",
+                "Husnummer": "33",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -25955.153729643556,
+                "y": 6567615.54163592,
+                "latitude": 58.923357534287874,
+                "longitude": 5.847356299361727
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Sandved barnehage",
+                "Url": "http://www.sandnes.kommune.no/barnehager/sandved/",
+                "Gatenavn": "Juvelveien",
+                "Husnummer": "6",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34852.432076276746,
+                "y": 6559422.6726986775,
+                "latitude": 58.83977030900428,
+                "longitude": 5.714508713616868
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Vatne barnehage",
+                "Url": "*",
+                "Gatenavn": "Skytebaneveien",
+                "Husnummer": "15",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -30147.95751973521,
+                "y": 6561446.752944458,
+                "latitude": 58.863522782642164,
+                "longitude": 5.79015821604255
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Porsholen barnehage",
+                "Url": "*",
+                "Gatenavn": "Porsmyrveien",
+                "Husnummer": "35",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32946.19536542997,
+                "y": 6563864.418688671,
+                "latitude": 58.88150074448242,
+                "longitude": 5.736500759671846
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Høle barnehage",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/hole-barnehage2/",
+                "Gatenavn": "Apalstøveien",
+                "Husnummer": "28",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -16810.605146744638,
+                "y": 6563306.007086397,
+                "latitude": 58.896224377034564,
+                "longitude": 6.014222357708284
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Espira Taremareby barnehage",
+                "Url": "http://www.espira.no",
+                "Gatenavn": "Sandvikbakken",
+                "Husnummer": "23",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -31439.757481095497,
+                "y": 6562365.915968998,
+                "latitude": 58.87007942027209,
+                "longitude": 5.7658633261515755
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Håholen barnehage",
+                "Url": "http://www.haaholenbarnehage.no",
+                "Gatenavn": "Kobberveien",
+                "Husnummer": "113",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33344.51193158107,
+                "y": 6562853.945183749,
+                "latitude": 58.87205125582999,
+                "longitude": 5.732098274746843
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Forsand barnehage",
+                "Url": "*",
+                "Gatenavn": "Bergekrossen",
+                "Husnummer": "1",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -11422.907606838096,
+                "y": 6563183.35864656,
+                "latitude": 58.90157425886684,
+                "longitude": 6.106872182969576
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Maudland Fus barnehage AS",
+                "Url": "*",
+                "Gatenavn": "Maudlandsveien",
+                "Husnummer": "61",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -25168.934264705866,
+                "y": 6567146.530080302,
+                "latitude": 58.920160193774144,
+                "longitude": 5.861945179863139
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Rissebærstraen barnehage",
+                "Url": "*",
+                "Gatenavn": "Sjøveien",
+                "Husnummer": "9",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32329.875134191476,
+                "y": 6564020.319237062,
+                "latitude": 58.883644997845465,
+                "longitude": 5.746680055034887
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Håbafjell idrettsbarnehage",
+                "Url": "http://www.haabafjell-idrettsbarnehage.no",
+                "Gatenavn": "Håbafjellveien",
+                "Husnummer": "45",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32946.076000282075,
+                "y": 6557455.090667965,
+                "latitude": 58.82468947807512,
+                "longitude": 5.751794686353759
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Stangelandsforen barnehage",
+                "Url": "*",
+                "Gatenavn": "Grovene",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -35045.52893753559,
+                "y": 6560245.089421036,
+                "latitude": 58.84681991646451,
+                "longitude": 5.709238586900354
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Knøttene åpen barnehage",
+                "Url": "*",
+                "Gatenavn": "Amboltveien",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -25454.049618451274,
+                "y": 6568043.66392774,
+                "latitude": 58.92776632529861,
+                "longitude": 5.854936211277729
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Soma Gård naturbarnehage",
+                "Url": "http://www.somagard-bhg.no",
+                "Gatenavn": "Sandnesveien",
+                "Husnummer": "246",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -35483.72651063802,
+                "y": 6562629.9369534785,
+                "latitude": 58.867412197630685,
+                "longitude": 5.696026548389984
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Skaarlia barnehage SA",
+                "Url": "*",
+                "Gatenavn": "Skaret terrasse",
+                "Husnummer": "1",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -31491.49037682265,
+                "y": 6559201.211431575,
+                "latitude": 58.841962138669146,
+                "longitude": 5.772509457456584
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Smeaheia barnehage",
+                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes/kommunale-barnehager/smeaheia-barneha",
+                "Gatenavn": "Kjærholen",
+                "Husnummer": "3",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34094.04055462475,
+                "y": 6561925.959634634,
+                "latitude": 58.86289765233897,
+                "longitude": 5.721491436370249
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Bogafjellbakken naturbarnehage SA",
+                "Url": "http://www.bogafjellbakken.no",
+                "Gatenavn": "Lyngholen",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33236.08424800739,
+                "y": 6556960.7538525555,
+                "latitude": 58.81994945432872,
+                "longitude": 5.74801533612972
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Øygard barnehage",
+                "Url": "*",
+                "Gatenavn": "Øygardsveien",
+                "Husnummer": "21",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -31561.747105464223,
+                "y": 6560544.180717699,
+                "latitude": 58.85378032163974,
+                "longitude": 5.7681131964776835
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Ormaskogen barnehage",
+                "Url": "*",
+                "Gatenavn": "Kjærholen",
+                "Husnummer": "1",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -34229.89324428141,
+                "y": 6561903.506062626,
+                "latitude": 58.86253024353635,
+                "longitude": 5.719220754239598
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Læringsverkstedet Strutsen naturbarnehage",
+                "Url": "*",
+                "Gatenavn": "Svebastadveien",
+                "Husnummer": "68",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32512.973445909098,
+                "y": 6558639.6933840625,
+                "latitude": 58.83572471007304,
+                "longitude": 5.756377982527919
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Trollhaugen foreldrelagsbarnehage SA",
+                "Url": "http://www.trollhaugen-barnehage.no",
+                "Gatenavn": "Urskjellveien",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -26187.641311501153,
+                "y": 6567860.1082978835,
+                "latitude": 58.925241411803725,
+                "longitude": 5.842791178256377
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Utsikten Vest Fus barnehage AS",
+                "Url": "*",
+                "Gatenavn": "Bogafjellbakken",
+                "Husnummer": "90",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33519.36731982685,
+                "y": 6556726.250804293,
+                "latitude": 58.81752080156129,
+                "longitude": 5.743732845942059
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Lekeland barnehage",
+                "Url": "*",
+                "Gatenavn": "Kalamyrveien",
+                "Husnummer": "2",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -26233.64634428278,
+                "y": 6567673.924081483,
+                "latitude": 58.92353434144528,
+                "longitude": 5.842443129838311
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Espira Eikenøtta naturbarnehage AS",
+                "Url": "http://www.espira.no",
+                "Gatenavn": "Kyrkjevollveien",
+                "Husnummer": "19",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -26528.339245070354,
+                "y": 6567711.592941119,
+                "latitude": 58.923507467993645,
+                "longitude": 5.837301226610437
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Iglemyr Fus barnehage",
+                "Url": "*",
+                "Gatenavn": "Øygardsveien",
+                "Husnummer": "191",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -32369.24236747995,
+                "y": 6559530.117295483,
+                "latitude": 58.84379503311767,
+                "longitude": 5.756715307867288
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Espira Vagletjørn barnehage",
+                "Url": "http://vagletjorn.espira.no/",
+                "Gatenavn": "Buggelandsbakken",
+                "Husnummer": "276",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33939.657066777116,
+                "y": 6556141.731911164,
+                "latitude": 58.811820149664335,
+                "longitude": 5.737944283474748
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Læringsverkstedet Osa gårdsbarnehage",
+                "Url": "*",
+                "Gatenavn": "Skjævelandveien",
+                "Husnummer": "20",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -36485.85621830914,
+                "y": 6556564.617594089,
+                "latitude": 58.812412198523695,
+                "longitude": 5.693433000053564
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Nlm-Barnehage Lube AS",
+                "Url": "*",
+                "Gatenavn": "Lindeveien",
+                "Husnummer": "79",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33417.30808789155,
+                "y": 6563576.57747743,
+                "latitude": 58.878366153630616,
+                "longitude": 5.729124145318176
+            }
+        },
+        {
+            "attributes": {
+                "Navn": "Kreativ barnehage Bogafjell",
+                "Url": "*",
+                "Gatenavn": "Buggelandsbakken",
+                "Husnummer": "209",
+                "Bokstav": null
+            },
+            "geometry": {
+                "x": -33355.67663643055,
+                "y": 6556307.638997247,
+                "latitude": 58.81401250358976,
+                "longitude": 5.747527106709621
+            }
+        }
+    ]
+}
