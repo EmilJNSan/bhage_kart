@@ -36,16 +36,22 @@
             "alias": "Bokstav",
             "type": "esriFieldTypeString",
             "length": 5
+        },
+        {
+            "name": "Type",
+            "alias": "Type",
+            "type": "esriFieldTypeInteger"
         }
     ],
     "features": [
         {
             "attributes": {
                 "Navn": "Åpen internasjonal kulturbarnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/apen-internasjonal-kulturbarnehage/",
                 "Gatenavn": "Holbergsgate",
                 "Husnummer": "23",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 101
             },
             "geometry": {
                 "x": -33185.72766211105,
@@ -57,10 +63,11 @@
         {
             "attributes": {
                 "Navn": "Tripp Trapp åpen barnehage",
-                "Url": "*",
+                "Url": "https://hanakirke.no/-%C3%85pen-barnehage",
                 "Gatenavn": "Åsveien",
                 "Husnummer": "124",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 101
             },
             "geometry": {
                 "x": -31996.273004114395,
@@ -72,10 +79,11 @@
         {
             "attributes": {
                 "Navn": "Sviland Fus barnehage AS",
-                "Url": "*",
+                "Url": "https://fus.no/sviland",
                 "Gatenavn": "Svilandveien",
                 "Husnummer": "215",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -28958.63698179077,
@@ -87,10 +95,11 @@
         {
             "attributes": {
                 "Navn": "Bogafjell Åpne barnehage",
-                "Url": "*",
+                "Url": "https://www.kirken.no/globalassets/fellesrad/00sandnes/bogafjell-sokn/div-pdf/informasjonsbrosjyre.pdf",
                 "Gatenavn": "Lyngholen",
                 "Husnummer": "3",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 101
             },
             "geometry": {
                 "x": -33301.4753691497,
@@ -105,7 +114,8 @@
                 "Url": "http://www.espira.no",
                 "Gatenavn": "Krystallveien",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -35404.64249462751,
@@ -117,10 +127,11 @@
         {
             "attributes": {
                 "Navn": "Sandvedhaugen barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sandvedhaugen-barnehage2/",
                 "Gatenavn": "Gamle Asheimvei",
                 "Husnummer": "15",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34684.13852690952,
@@ -132,10 +143,11 @@
         {
             "attributes": {
                 "Navn": "Læringsverkstedet Bratteborg barnehage",
-                "Url": "*",
+                "Url": "https://laringsverkstedet.no/barnehage/bratteborg",
                 "Gatenavn": "Brattebøveien",
                 "Husnummer": "8",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32551.6813667682,
@@ -150,7 +162,8 @@
                 "Url": "http://www.sandtoppen.no",
                 "Gatenavn": "Sandvikbakken",
                 "Husnummer": "21",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -31369.98423571745,
@@ -162,10 +175,11 @@
         {
             "attributes": {
                 "Navn": "Læringsverkstedet Julebygda barnehage",
-                "Url": "http://www.laringsverkstedet.no/julebygda",
+                "Url": "https://laringsverkstedet.no/barnehage/julebygda",
                 "Gatenavn": "Heigreveien",
                 "Husnummer": "401",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -38227.08023229323,
@@ -177,10 +191,11 @@
         {
             "attributes": {
                 "Navn": "Brueland barnehage",
-                "Url": "http://www.sandnes.kommune.no/bruelandbhg",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/brueland-barnehage2/",
                 "Gatenavn": "Samuel J. Sandvedsvei",
                 "Husnummer": "2-4",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34001.59289388405,
@@ -192,10 +207,11 @@
         {
             "attributes": {
                 "Navn": "Stangeland barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skeiane-barnehagene-avdeling-stangeland-barnehage/",
                 "Gatenavn": "Agneveien",
                 "Husnummer": "1",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34388.25891308207,
@@ -207,10 +223,11 @@
         {
             "attributes": {
                 "Navn": "Varatun barnehage Varatunhagen",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/varatun-barnehagene2/",
                 "Gatenavn": "Varatunhagen",
                 "Husnummer": "53",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33482.294679940096,
@@ -225,7 +242,8 @@
                 "Url": "http://www.lundegardbarnehage.no",
                 "Gatenavn": "Haugen",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34534.24765120598,
@@ -240,7 +258,8 @@
                 "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/ganddal-barnehagene-avdeling-Ganddal-barnehage/",
                 "Gatenavn": "Kvålveien",
                 "Husnummer": "11",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -35060.122335908585,
@@ -252,10 +271,11 @@
         {
             "attributes": {
                 "Navn": "Varatun barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/varatun-barnehagene2/",
                 "Gatenavn": "Postveien",
                 "Husnummer": "136",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33284.470628506504,
@@ -267,10 +287,11 @@
         {
             "attributes": {
                 "Navn": "Gravarslia barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/austsia-barnehagene-avdeling-gravarslia-barnehage/",
                 "Gatenavn": "Gravarstunet",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33041.6951592532,
@@ -285,7 +306,8 @@
                 "Url": "http://www.buggeland-barnehage.no",
                 "Gatenavn": "Buggelandsbakken",
                 "Husnummer": "145",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32959.64350598201,
@@ -297,10 +319,11 @@
         {
             "attributes": {
                 "Navn": "Lundehagen Fus barnehage",
-                "Url": "*",
+                "Url": "https://fus.no/lundehagen",
                 "Gatenavn": "Akselhagen",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -35654.83546620887,
@@ -315,7 +338,8 @@
                 "Url": "http://laringsverkstedet.no/barnehage/vatnekrossen",
                 "Gatenavn": "Hanamyrveien",
                 "Husnummer": "23",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -31211.08667173097,
@@ -327,10 +351,11 @@
         {
             "attributes": {
                 "Navn": "Figgjoelva barnehage",
-                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes2/kommunale-barnehager/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/figgjoelva-barnehage/",
                 "Gatenavn": "Tjessheimveien",
                 "Husnummer": "8",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -29947.278553414624,
@@ -342,10 +367,11 @@
         {
             "attributes": {
                 "Navn": "Røyrvik gårdsbarnehage AS",
-                "Url": "http://royrvik-gard.no",
+                "Url": "https://royrvik-gard.barnehage.no/",
                 "Gatenavn": "Røyrvikveien",
                 "Husnummer": "1",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34720.41999813693,
@@ -357,10 +383,11 @@
         {
             "attributes": {
                 "Navn": "Sørbø barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/ganddal-barnahagene-sorbo-barnehage/",
                 "Gatenavn": "Sørbøveien",
                 "Husnummer": "59",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34056.103473680676,
@@ -372,10 +399,11 @@
         {
             "attributes": {
                 "Navn": "Kreativ barnehage Hove",
-                "Url": "*",
+                "Url": "https://kreativ.barnehage.no/",
                 "Gatenavn": "Hafrakveien",
                 "Husnummer": "11",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34023.36771232926,
@@ -387,10 +415,11 @@
         {
             "attributes": {
                 "Navn": "Langgata barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sentrumsbarnehagene-avdeling-langgata-barnehage/",
                 "Gatenavn": "Langgata",
                 "Husnummer": "74",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33231.263921650476,
@@ -402,10 +431,11 @@
         {
             "attributes": {
                 "Navn": "Kleivane barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sor-ost-barnehagene-avdeling-kleivane-barnehage/",
                 "Gatenavn": "Kvernhusbakken",
                 "Husnummer": "1",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -31767.38970117527,
@@ -420,7 +450,8 @@
                 "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/ganddal-barnahagene-sorbo-barnehage/",
                 "Gatenavn": "Harahaugane",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34071.76985212951,
@@ -432,10 +463,11 @@
         {
             "attributes": {
                 "Navn": "Hans og Grete barnehage SA",
-                "Url": "*",
+                "Url": "https://hansoggrete.barnehage.no/",
                 "Gatenavn": "Foren",
                 "Husnummer": "51",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -35153.89673638216,
@@ -447,10 +479,11 @@
         {
             "attributes": {
                 "Navn": "Håbet Fus barnehage",
-                "Url": "http://www.haabet-barnehage.no",
+                "Url": "https://fus.no/habet",
                 "Gatenavn": "Håbafjellveien",
                 "Husnummer": "39",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32845.32546737802,
@@ -462,10 +495,11 @@
         {
             "attributes": {
                 "Navn": "Figgjo barnehage",
-                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes2/kommunale-barnehager/Sor-ost-barneha",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/Sor-ost-barnehagene-avdeling-figgjo-barnehage/",
                 "Gatenavn": "Utslåtten",
                 "Husnummer": "2",
-                "Bokstav": "A"
+                "Bokstav": "A",
+                "Type": 100
             },
             "geometry": {
                 "x": -29992.194023073767,
@@ -480,7 +514,8 @@
                 "Url": "http://www.aktiv-barnehage.no",
                 "Gatenavn": "Gamle Somavei",
                 "Husnummer": "26",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33946.94447439676,
@@ -492,10 +527,11 @@
         {
             "attributes": {
                 "Navn": "Rabalder barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/rabalder-barnehage/",
                 "Gatenavn": "Porsmyrveien",
                 "Husnummer": "7",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33488.961004985846,
@@ -510,7 +546,8 @@
                 "Url": "http://www.espira.no",
                 "Gatenavn": "Midtbergmyrå",
                 "Husnummer": "6",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33463.65919914027,
@@ -522,10 +559,11 @@
         {
             "attributes": {
                 "Navn": "Trones barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sentrumsbarnehagene-avdeling-trones-barnehage/",
                 "Gatenavn": "Postveien",
                 "Husnummer": "63",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33586.042322863825,
@@ -537,10 +575,11 @@
         {
             "attributes": {
                 "Navn": "Myklaberget barnehage",
-                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes2/kommunale-barnehager/gandsfjord-barn",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/gandsfjord-barnehagene-avdeling-myklaberget-barnehage/",
                 "Gatenavn": "Smørbukkveien",
                 "Husnummer": "11",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33009.30488503189,
@@ -552,10 +591,11 @@
         {
             "attributes": {
                 "Navn": "Svanholmen Kanvas-barnehage",
-                "Url": "*",
+                "Url": "https://www.kanvas.no/svanholmen/",
                 "Gatenavn": "Svanholmen",
                 "Husnummer": "8",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34495.59418952756,
@@ -567,10 +607,11 @@
         {
             "attributes": {
                 "Navn": "Myrsnipa barnehage",
-                "Url": "http://www.myrsnipa.barnehage.no",
+                "Url": "https://myrsnipa.barnehage.no/",
                 "Gatenavn": "Porsholen",
                 "Husnummer": "2",
-                "Bokstav": "A"
+                "Bokstav": "A",
+                "Type": 100
             },
             "geometry": {
                 "x": -33265.46875416383,
@@ -582,10 +623,11 @@
         {
             "attributes": {
                 "Navn": "Hommersåk barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/riska-barnehagene-avdeling-hommersak-barnehage/",
                 "Gatenavn": "Teineveien",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -25848.26532413985,
@@ -597,10 +639,11 @@
         {
             "attributes": {
                 "Navn": "Austrått barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/sor-ost-barnehagene-avdeling-austratt-barnehage/",
                 "Gatenavn": "Øygardsveien",
                 "Husnummer": "162",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32236.498998177587,
@@ -612,10 +655,11 @@
         {
             "attributes": {
                 "Navn": "Jønningheia barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skogsheia-barnehagene-avdeling-jonningheia-barnehage/",
                 "Gatenavn": "Tulipanveien",
                 "Husnummer": "13",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34178.40097165841,
@@ -627,10 +671,11 @@
         {
             "attributes": {
                 "Navn": "Riska barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/riska-barnehagene-avdeling-riska-barnehage/",
                 "Gatenavn": "Kydnaveien",
                 "Husnummer": "33",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -25955.153729643556,
@@ -642,10 +687,11 @@
         {
             "attributes": {
                 "Navn": "Sandved barnehage",
-                "Url": "http://www.sandnes.kommune.no/barnehager/sandved/",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skeiane-barnehagene-avdeling-sandved-barnehage/",
                 "Gatenavn": "Juvelveien",
                 "Husnummer": "6",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34852.432076276746,
@@ -657,10 +703,11 @@
         {
             "attributes": {
                 "Navn": "Vatne barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/austsia-barnehagene-avdeling-vatne-barnehage/",
                 "Gatenavn": "Skytebaneveien",
                 "Husnummer": "15",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -30147.95751973521,
@@ -672,10 +719,11 @@
         {
             "attributes": {
                 "Navn": "Porsholen barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/gandsfjord-barnehagene-avdeling-porsholen-barnehage/",
                 "Gatenavn": "Porsmyrveien",
                 "Husnummer": "35",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32946.19536542997,
@@ -690,7 +738,8 @@
                 "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/hole-barnehage2/",
                 "Gatenavn": "Apalstøveien",
                 "Husnummer": "28",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -16810.605146744638,
@@ -705,7 +754,8 @@
                 "Url": "http://www.espira.no",
                 "Gatenavn": "Sandvikbakken",
                 "Husnummer": "23",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -31439.757481095497,
@@ -720,7 +770,8 @@
                 "Url": "http://www.haaholenbarnehage.no",
                 "Gatenavn": "Kobberveien",
                 "Husnummer": "113",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33344.51193158107,
@@ -732,10 +783,11 @@
         {
             "attributes": {
                 "Navn": "Forsand barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/forsand-barnehage2/",
                 "Gatenavn": "Bergekrossen",
                 "Husnummer": "1",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -11422.907606838096,
@@ -747,10 +799,11 @@
         {
             "attributes": {
                 "Navn": "Maudland Fus barnehage AS",
-                "Url": "*",
+                "Url": "https://fus.no/maudland",
                 "Gatenavn": "Maudlandsveien",
                 "Husnummer": "61",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -25168.934264705866,
@@ -762,10 +815,11 @@
         {
             "attributes": {
                 "Navn": "Rissebærstraen barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/gandsfjord-barnehagene-avdeling-rissebarstraen-barnehage/",
                 "Gatenavn": "Sjøveien",
                 "Husnummer": "9",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32329.875134191476,
@@ -780,7 +834,8 @@
                 "Url": "http://www.haabafjell-idrettsbarnehage.no",
                 "Gatenavn": "Håbafjellveien",
                 "Husnummer": "45",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32946.076000282075,
@@ -792,10 +847,11 @@
         {
             "attributes": {
                 "Navn": "Stangelandsforen barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skeiane-barnehagene-avdeling-stangelandsforen-barnehage/",
                 "Gatenavn": "Grovene",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -35045.52893753559,
@@ -807,10 +863,11 @@
         {
             "attributes": {
                 "Navn": "Knøttene åpen barnehage",
-                "Url": "*",
+                "Url": "https://riskakirke.no/-%C3%85pen-barnehage",
                 "Gatenavn": "Amboltveien",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 101
             },
             "geometry": {
                 "x": -25454.049618451274,
@@ -825,7 +882,8 @@
                 "Url": "http://www.somagard-bhg.no",
                 "Gatenavn": "Sandnesveien",
                 "Husnummer": "246",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -35483.72651063802,
@@ -837,10 +895,11 @@
         {
             "attributes": {
                 "Navn": "Skaarlia barnehage SA",
-                "Url": "*",
+                "Url": "https://skaarlia.barnehage.no/",
                 "Gatenavn": "Skaret terrasse",
                 "Husnummer": "1",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -31491.49037682265,
@@ -852,10 +911,11 @@
         {
             "attributes": {
                 "Navn": "Smeaheia barnehage",
-                "Url": "http://www.sandnes.kommune.no/barnehage-og-skole/barnehager-i-sandnes/kommunale-barnehager/smeaheia-barneha",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/skogsheia-barnehagene-avdeling-smeaheia-barnehage/",
                 "Gatenavn": "Kjærholen",
                 "Husnummer": "3",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34094.04055462475,
@@ -867,10 +927,11 @@
         {
             "attributes": {
                 "Navn": "Bogafjellbakken naturbarnehage SA",
-                "Url": "http://www.bogafjellbakken.no",
+                "Url": "https://www.minbarnehage.no/bogafjellbakken",
                 "Gatenavn": "Lyngholen",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33236.08424800739,
@@ -882,10 +943,11 @@
         {
             "attributes": {
                 "Navn": "Øygard barnehage",
-                "Url": "*",
+                "Url": "https://www.sandnes.kommune.no/sti/barn-unge-og-familie/barnehage/barnehager-i-sandnes/kommunale-barnehager/austsia-barnehagene-avdeling-oygard-barnehage/",
                 "Gatenavn": "Øygardsveien",
                 "Husnummer": "21",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -31561.747105464223,
@@ -897,10 +959,11 @@
         {
             "attributes": {
                 "Navn": "Ormaskogen barnehage",
-                "Url": "*",
+                "Url": "https://www.ormaskogen.no/",
                 "Gatenavn": "Kjærholen",
                 "Husnummer": "1",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -34229.89324428141,
@@ -912,10 +975,11 @@
         {
             "attributes": {
                 "Navn": "Læringsverkstedet Strutsen naturbarnehage",
-                "Url": "*",
+                "Url": "https://laringsverkstedet.no/barnehage/strutsen-et-pedagogisk-barnesenter",
                 "Gatenavn": "Svebastadveien",
                 "Husnummer": "68",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32512.973445909098,
@@ -927,10 +991,11 @@
         {
             "attributes": {
                 "Navn": "Trollhaugen foreldrelagsbarnehage SA",
-                "Url": "http://www.trollhaugen-barnehage.no",
+                "Url": "https://www.minbarnehage.no/trollhaugen",
                 "Gatenavn": "Urskjellveien",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -26187.641311501153,
@@ -942,10 +1007,11 @@
         {
             "attributes": {
                 "Navn": "Utsikten Vest Fus barnehage AS",
-                "Url": "*",
+                "Url": "https://fus.no/utsiktenvest",
                 "Gatenavn": "Bogafjellbakken",
                 "Husnummer": "90",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33519.36731982685,
@@ -957,10 +1023,11 @@
         {
             "attributes": {
                 "Navn": "Lekeland barnehage",
-                "Url": "*",
+                "Url": "https://lekeland.barnehage.no/",
                 "Gatenavn": "Kalamyrveien",
                 "Husnummer": "2",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -26233.64634428278,
@@ -975,7 +1042,8 @@
                 "Url": "http://www.espira.no",
                 "Gatenavn": "Kyrkjevollveien",
                 "Husnummer": "19",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -26528.339245070354,
@@ -987,10 +1055,11 @@
         {
             "attributes": {
                 "Navn": "Iglemyr Fus barnehage",
-                "Url": "*",
+                "Url": "https://fus.no/iglemyr",
                 "Gatenavn": "Øygardsveien",
                 "Husnummer": "191",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -32369.24236747995,
@@ -1002,10 +1071,11 @@
         {
             "attributes": {
                 "Navn": "Espira Vagletjørn barnehage",
-                "Url": "http://vagletjorn.espira.no/",
+                "Url": "https://espira.no/barnehage/espira-vagletjorn/",
                 "Gatenavn": "Buggelandsbakken",
                 "Husnummer": "276",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33939.657066777116,
@@ -1017,10 +1087,11 @@
         {
             "attributes": {
                 "Navn": "Læringsverkstedet Osa gårdsbarnehage",
-                "Url": "*",
+                "Url": "https://laringsverkstedet.no/barnehage/l%C3%A6ringsverkstedet-osa-g%C3%A5rdsbarnehage",
                 "Gatenavn": "Skjævelandveien",
                 "Husnummer": "20",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -36485.85621830914,
@@ -1035,7 +1106,8 @@
                 "Url": "*",
                 "Gatenavn": "Lindeveien",
                 "Husnummer": "79",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33417.30808789155,
@@ -1047,10 +1119,11 @@
         {
             "attributes": {
                 "Navn": "Kreativ barnehage Bogafjell",
-                "Url": "*",
+                "Url": "https://kreativ-bogafjell.barnehage.no/",
                 "Gatenavn": "Buggelandsbakken",
                 "Husnummer": "209",
-                "Bokstav": null
+                "Bokstav": null,
+                "Type": 100
             },
             "geometry": {
                 "x": -33355.67663643055,
