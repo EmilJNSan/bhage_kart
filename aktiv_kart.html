@@ -34,32 +34,54 @@
         });
 
 
-        function loadMarkers(data) {
-            var markers = [];
-            if (data.features && Array.isArray(data.features)) {
-                data.features.forEach(function (plass) {
-                    var icon = blaatikon;
-                    var marker = L.marker([plass.geometry.latitude, plass.geometry.longitude], { icon: icon }).bindPopup(`
-                        <a href="${plass.attributes.Url}" target="_blank"><h2>${plass.attributes.Navn}</h2></a> 
-                        Adresse: ${plass.attributes.Gatenavn} ${plass.attributes.Husnummer} ${plass.attributes.Bokstav || ''}<br>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.geometry.latitude},${plass.geometry.longitude}" target="_blank">Veibeskrivelse</a> <br>
-                    `);
-                    marker.data = plass;
-                    markers.push(marker);
-                    try{
-                        eval("group_"+plass.attributes.Type+"_Cluster").addLayer(marker);
-                    }
-                    catch(error){
-                        console.log(error)
-                        group_annet_Cluster.addLayer(marker);
-                    }
-                    group_all_Cluster.addLayer(marker);
+function imageExists(url, callback) {
+    var img = new Image();
+    img.onload = function() { callback(true); };
+    img.onerror = function() { callback(false); };
+    img.src = url;
+}
+
+function loadMarkers(data) {
+    var markers = [];
+    if (data.features && Array.isArray(data.features)) {
+        data.features.forEach(function (plass) {
+            var type = plass.attributes.Type;
+            var iconUrl = `${direct}css/images/icon/${type}.png`;
+
+            imageExists(iconUrl, function(exists) {
+                if (!exists) {
+                    iconUrl = '${direct}css/images/icon/999.png';
+                }
+
+                var icon = L.icon({
+                    iconUrl: iconUrl,
+                    iconSize: [32, 32],
+                    iconAnchor: [16, 32],
+                    popupAnchor: [0, -32]
                 });
-            } else {
-                console.error('Data does not contain features array');
-            }
-            return markers;
-        }
+
+                var marker = L.marker([plass.geometry.latitude, plass.geometry.longitude], { icon: icon }).bindPopup(`
+                    <a href="${plass.attributes.Url}" target="_blank"><h2>${plass.attributes.Navn}</h2></a> 
+                    Adresse: ${plass.attributes.Gatenavn} ${plass.attributes.Husnummer} ${plass.attributes.Bokstav || ''}<br>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.geometry.latitude},${plass.geometry.longitude}" target="_blank">Veibeskrivelse</a> <br>
+                `);
+                marker.data = plass;
+                
+                markers.push(marker);
+                try {
+                    eval("group_" + plass.attributes.Type + "_Cluster").addLayer(marker);
+                } catch (error) {
+                    console.log(error);
+                    group_annet_Cluster.addLayer(marker);
+                }
+                group_all_Cluster.addLayer(marker);
+            });
+        });
+    } else {
+        console.error('Data does not contain features array');
+    }
+    return markers;
+}
 
         var allMarkers = [];
 
