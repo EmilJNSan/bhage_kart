@@ -23,7 +23,7 @@
     <script src="https://emiljnsan.github.io/bhage_kart/js/variables_parkdata.js"></script>
     <script>
         
-        console.log(testtekst);
+        console.log(testtekst)
 
         function loadMarkers(data) {
             var markers = [];
@@ -68,6 +68,33 @@
         var forflytningshemmedeLayer = L.layerGroup();
         var mcLayer = L.layerGroup(mcMarkers);
         var allMarkersLayer = L.layerGroup();
+
+
+        function updateMarkers() {
+            veiparkeringsforbud.clearLayers();
+            allMarkersLayer.clearLayers();
+            gratisLayer.clearLayers();
+            ladeplasserLayer.clearLayers();
+            forflytningshemmedeLayer.clearLayers();
+            MCmarkerCluster.clearLayers();
+            LADEmarkerCluster.clearLayers();
+            HCmarkerCluster.clearLayers();
+            AllmarkerCluster.clearLayers();
+
+            allMarkers.forEach(function (marker) {
+                var data = marker.data;
+                if (data.aktivVersjon.antallLadeplasser > 0) {
+                    LADEmarkerCluster.addLayer(marker);
+                }
+                if (data.aktivVersjon.antallForflytningshemmede > 0) {
+                    HCmarkerCluster.addLayer(marker);
+                }
+                AllmarkerCluster.addLayer(marker);
+            });
+            MCmarkerCluster.addLayers(mcMarkers);
+
+            veiparkeringsforbud.addLayer(polygon).addLayer(polygon2);
+        }
 
         fetch(jsonUrl)
             .then(response => response.json())
