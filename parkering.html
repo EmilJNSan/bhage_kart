@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karttest</title>
+    <link rel="stylesheet" href="/EPiServer/CMS/Content/globalassets/webredaktor/emil-test/leaflet.css"/>
+    <link rel="stylesheet" href="/EPiServer/CMS/Content/globalassets/webredaktor/emil-test/MarkerCluster.css"/>
+    <link rel="stylesheet" href="/EPiServer/CMS/Content/globalassets/webredaktor/emil-test/MarkerCluster.Default.css"/>
+    <script src="/EPiServer/CMS/Content/globalassets/webredaktor/emil-test/leaflet.js"></script>
+    <script src="/EPiServer/CMS/Content/globalassets/webredaktor/emil-test/leaflet.markercluster.js"></script>
+    <style>
+        #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
+        .subtle { font-weight: bold; color: gray; }
+        body, html { margin: 0; padding: 0; height: 100%; }
+        .mapboks { height: 80%; width: 80%; margin: auto; }
+    </style>
+</head>
+<body>
+    <div class="mapboks">
+        <div id="map"></div>
+    </div>
+    <script src="/EPiServer/CMS/Content/globalassets/webredaktor/emil-test/variables.js"></script>
+    <script>
+        
+        console.log(testtekst)
+
+        function loadMarkers(data) {
+            var markers = [];
+            data.forEach(function (plass) {
+                var icon = plass.parkeringstilbyderNavn === "SANDNES KOMMUNE" ? blaatikon : svartikon;
+                var fylladresse = plass.aktivVersjon.adresse || "Ingen";
+                var marker = L.marker([plass.breddegrad, plass.lengdegrad], { icon: icon }).bindPopup(`
+                    <h2>${plass.aktivVersjon.navn}</h2>
+                    Adresse: ${fylladresse}<br>
+                    Antall plasser: ${plass.aktivVersjon.antallAvgiftsbelagtePlasser + plass.aktivVersjon.antallAvgiftsfriePlasser}<br>
+                    Ladeplasser: ${plass.aktivVersjon.antallLadeplasser}<br>
+                    HC: ${plass.aktivVersjon.antallForflytningshemmede}<br>
+                    <br>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.breddegrad},${plass.lengdegrad}" target="_blank">Veibeskrivelse</a> <br>
+                    <br>
+                    <sup>${plass.parkeringstilbyderNavn}</sup>
+                    <br>
+                    <sup>Id: ${plass.id}</sup>
+                `);
+                marker.data = plass;
+                markers.push(marker);
+            });
+            return markers;
+        }
+        
+        var allMarkers = [];
+        function load_mcmarker(mc) {
+            var mcMarkers = [];
+            mc.forEach(function(mcplass) {
+                var mcMarker = L.marker([mcplass[0], mcplass[1]], { icon: mcikon }).bindPopup(`
+                    <h2>MC-parkering</h2>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=${mcplass[0]},${mcplass[1]}" target="_blank">Veibeskrivelse</a> <br>
+                `);
+                mcMarkers.push(mcMarker);
+            });
+            return mcMarkers;
+        }
+        var mcMarkers = load_mcmarker(mc);
+        var veiparkeringsforbud = L.layerGroup();
+        var gratisLayer = L.layerGroup();
+        var ladeplasserLayer = L.layerGroup();
+        var forflytningshemmedeLayer = L.layerGroup();
+        var mcLayer = L.layerGroup(mcMarkers);
+        var allMarkersLayer = L.layerGroup();
+
+        fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                allMarkers = loadMarkers(data);
+                allMarkers.forEach(marker => allMarkersLayer.addLayer(marker));
+            })
+            .catch(error => {
+                console.error('Error fetching the JSON data:', error);
+                const contentDiv = document.getElementById('content');
+                contentDiv.innerHTML = `<p>Det oppstod en feil ved henting av data: ${error.message}</p>`;
+            });
+
+        polygon2.bindPopup("Parkering langs vei forbudt");
+        polygon.bindPopup("Parkering langs vei forbudt");
+
+        veiparkeringsforbud.addLayer(polygon);
+
+        var map = L.map('map', {
+            center: [58.85, 5.75],
+            zoom: 10,
+            layers: [
+                L.tileLayer(grunnkart, {
+                    maxZoom: 18,
+                    attribution: attribution_tag
+                }),
+                AllmarkerCluster,
+                veiparkeringsforbud
+            ]
+        });
+
+        let overlaysoppe = {
+            "Alle plasser": AllmarkerCluster,
+            "Ladeplasser": LADEmarkerCluster,
+            "HC-parkering": HCmarkerCluster,
+            "MC-parkering": MCmarkerCluster
+        };
+
+        let overlaysnede = {"Veiparkering forbudt": veiparkeringsforbud};
+
+        L.control.layers(overlaysoppe, overlaysnede, {collapsed: true}).addTo(map);
+    </script>
+</body>
+</html>
