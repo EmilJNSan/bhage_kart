@@ -10,6 +10,13 @@ const marker_blaa = "css/images/icon/marker-icon_park_blaa.png";
 const shadow = "css/images/marker-shadow.png";
 
 const testtekst = "test ok"
+const mc = [
+    [59.046289508014254, 6.651780581972136],
+    [58.85474301714041, 5.74084528545535],
+    [58.85360521633842, 5.739766638632233],
+    [58.850223151965054, 5.7344736541691645],
+    [58.84901015574755, 5.738068321265104]
+];
 var AllmarkerCluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
@@ -47,13 +54,7 @@ var mcikon = L.icon({
     iconSize: [25, 41],
     shadowSize: [25, 41]
 });
-const mc = [
-    [59.046289508014254, 6.651780581972136],
-    [58.85474301714041, 5.74084528545535],
-    [58.85360521633842, 5.739766638632233],
-    [58.850223151965054, 5.7344736541691645],
-    [58.84901015574755, 5.738068321265104]
-];
+
 
 
 const polygon = L.polygon([
