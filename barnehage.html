@@ -24,46 +24,6 @@
     <script>
         console.log(testtekst)
 
-        var publicCluster = L.markerClusterGroup({
-            maxClusterRadius: 55,
-            disableClusteringAtZoom: 16
-        });
-
-        var privateCluster = L.markerClusterGroup({
-            maxClusterRadius: 55,
-            disableClusteringAtZoom: 16
-        });
-
-        var openCluster = L.markerClusterGroup({
-            maxClusterRadius: 55,
-            disableClusteringAtZoom: 16
-        });
-        var allcluster = L.markerClusterGroup({
-            maxClusterRadius: 55,
-            disableClusteringAtZoom: 16
-        });
-
-        var blaatikon = L.icon({
-            iconUrl: `${direct}${marker_blaa}`,
-            shadowUrl: `${direct}${shadow}`,
-            iconSize: [25, 41],
-            shadowSize: [25, 41]
-        });
-
-        var gronikon = L.icon({
-            iconUrl: `${direct}${marker_gron}`,
-            shadowUrl: `${direct}${shadow}`,
-            iconSize: [25, 41],
-            shadowSize: [25, 41]
-        });
-
-        var oransjeikon = L.icon({
-            iconUrl: `${direct}${marker_oransje}`,
-            shadowUrl: `${direct}${shadow}`,
-            iconSize: [25, 41],
-            shadowSize: [25, 41]
-        });
-
         function loadMarkers(data) {
             var markers = [];
             if (data.features && Array.isArray(data.features)) {
