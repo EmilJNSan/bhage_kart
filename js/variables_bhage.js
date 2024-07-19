@@ -7,6 +7,7 @@ const marker_blaa = "css/images/icon/marker-icon_blaa.png";
 const marker_gron = "css/images/icon/marker-icon_gron.png";
 const shadow = "css/images/marker-shadow.png";
 const testtekst = "test ok";
+
 var publicCluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
