@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karttest</title>
+    <link rel="stylesheet" href="/EPiServer/CMS/Content/globalassets/webredaktor/barnehage-kart/leaflet.css"/>
+    <link rel="stylesheet" href="/EPiServer/CMS/Content/globalassets/webredaktor/barnehage-kart/MarkerCluster.css"/>
+    <link rel="stylesheet" href="/EPiServer/CMS/Content/globalassets/webredaktor/barnehage-kart/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="/EPiServer/CMS/Content/globalassets/webredaktor/aktivitet/L.Control.Layers.Tree.css"/>
+    <script src="/EPiServer/CMS/Content/globalassets/webredaktor/barnehage-kart/leaflet.js"></script>
+    <script src="/EPiServer/CMS/Content/globalassets/webredaktor/barnehage-kart/leaflet.markercluster.js"></script>
+    <script src="/EPiServer/CMS/Content/globalassets/webredaktor/aktivitet/L.Control.Layers.Tree.js"></script>
+    <script src="/EPiServer/CMS/Content/globalassets/webredaktor/aktivitet/variables_akt.js"></script>
+
+    <style>
+        #map { height: 100%; width: 100%; border-style: solid; border-width: 2px; }
+        .subtle { font-weight: bold; color: gray; }
+        body, html { margin: 0; padding: 0; height: 100%; }
+        .mapboks { height: 80%; width: 80%; margin: auto; }
+    </style>
+</head>
+<body>
+    <div class="mapboks">
+        <div id="map"></div>
+    </div>
+    <script>
+        console.log(testtekst);
+        console.log("Test kart variant 3 ");
+        var blaatikon = L.icon({
+            iconUrl: `${direct}${marker_blaa}`,
+            iconSize: [25, 41],
+            shadowSize: [25, 41]
+        });
+
+
+        function loadMarkers(data) {
+            var markers = [];
+            if (data.features && Array.isArray(data.features)) {
+                data.features.forEach(function (plass) {
+                    var icon = blaatikon;
+                    var marker = L.marker([plass.geometry.latitude, plass.geometry.longitude], { icon: icon }).bindPopup(`
+                        <a href="${plass.attributes.Url}" target="_blank"><h2>${plass.attributes.Navn}</h2></a> 
+                        Adresse: ${plass.attributes.Gatenavn} ${plass.attributes.Husnummer} ${plass.attributes.Bokstav || ''}<br>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${plass.geometry.latitude},${plass.geometry.longitude}" target="_blank">Veibeskrivelse</a> <br>
+                    `);
+                    marker.data = plass;
+                    markers.push(marker);
+                    try{
+                        eval("group_"+plass.attributes.Type+"_Cluster").addLayer(marker);
+                    }
+                    catch(error){
+                        console.log(error)
+                        group_annet_Cluster.addLayer(marker);
+                    }
+                    group_all_Cluster.addLayer(marker);
+                });
+            } else {
+                console.error('Data does not contain features array');
+            }
+            return markers;
+        }
+
+        var allMarkers = [];
+
+        fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                allMarkers = loadMarkers(data);
+            })
+            .catch(error => {
+                console.error('Error fetching the JSON data:', error);
+            });
+
+        var map = L.map('map', {
+            center: [58.85, 5.75],
+            zoom: 10,
+            layers: [
+                L.tileLayer(grunnkart, {
+                    maxZoom: 18,
+                    attribution: attribution_tag
+                }),
+                group_all_Cluster,
+            ]
+        });
+
+
+        var overlays = {
+            label: "<strong>"+"Aktiviteter"+"</strong>",
+            children: [
+                {
+                    label: "Alt",
+                    layer: group_all_Cluster
+                },
+                {
+                    label: "<b>"+"Fotballbaner"+"</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Kunstgress", layer: group_100_Cluster },
+                        { label: "Grus", layer: group_101_Cluster },
+                        { label: "Gress", layer: group_102_Cluster }
+                    ]
+                },
+                
+                {
+                    label: "<b>"+"Friidrett"+"</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Friidrettsbane", layer: group_907_Cluster },
+                        { label: "Idrettshall", layer: group_201_Cluster }
+                    ]
+                },
+                {
+                    label: "<b>"+"Svømmehaller"+"</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Helsebasseng", layer: group_300_Cluster },
+                        { label: "Svømmehall", layer: group_301_Cluster }
+                    ]
+                },
+                {
+                    label: "<b>"+"Sykkel"+"</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "BMX-bane", layer: group_902_Cluster },
+                        { label: "Pumptrack", layer: group_908_Cluster },
+                        { label: "Sykkelopplæring", layer: group_900_Cluster }
+                    ]
+                },
+                {
+                    label: "<b>"+"Annet"+"</b>",
+                    collapsed: true,
+                    children: [
+                        { label: "Rideanlegg", layer: group_905_Cluster },
+                        { label: "Discgolf", layer: group_901_Cluster },
+                        { label: "Rulleski", layer: group_903_Cluster },
+                        { label: "Skatepark", layer: group_906_Cluster },
+                        { label: "Sandvolleyball", layer: group_911_Cluster },
+                        { label: "Tennisbane", layer: group_904_Cluster },
+                        { label: "Skytebane", layer: group_909_Cluster },
+                        { label: "Annet", layer: group_annet_Cluster }
+                    ]
+                }
+            ]
+        };
+
+        L.control.layers.tree(overlays,null).addTo(map);
+    </script>
+</body>
+</html>
