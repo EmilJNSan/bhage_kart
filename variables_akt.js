@@ -1,8 +1,8 @@
 const jsonUrl = "https://Laila72.github.io/Park_data/aktiviteter.json";
-const direct = "/EPiServer/CMS/Content/globalassets/webredaktor/aktivitet/";
+const direct = "https://emiljnsan.github.io/bhage_kart/";
 const grunnkart = "https://services.geodataonline.no/arcgis/rest/services/Geocache_WMAS_WGS84/GeocacheBasis/MapServer/tile/{z}/{y}/{x}";
 const attribution_tag = '©️ Geodata AS, Kartverket, Geovekst og kommunene, OpenStreetMap';
-const marker_blaa = "marker-icon_park_blaa.png";
+const marker_blaa = "https://emiljnsan.github.io/bhage_kart/icon/marker-icon_park_blaa.png";
 const testtekst = "Test variabler variant 1"
 
 
