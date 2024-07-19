@@ -46,11 +46,11 @@ function loadMarkers(data) {
     if (data.features && Array.isArray(data.features)) {
         data.features.forEach(function (plass) {
             var type = plass.attributes.Type;
-            var iconUrl = `${direct}css/images/icon/${type}.png`;
+            var iconUrl = `${direct}css/images/icon/aktiv/${type}.png`;
 
             imageExists(iconUrl, function(exists) {
                 if (!exists) {
-                    iconUrl = '${direct}css/images/icon/999.png';
+                    iconUrl = '${direct}css/images/icon/aktiv/999.png';
                 }
 
                 var icon = L.icon({
