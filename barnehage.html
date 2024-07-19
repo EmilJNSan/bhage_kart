@@ -128,10 +128,11 @@
 
         var map = L.map('map', {
             center: [58.85, 5.75],
-            zoom: 13,
+            zoom: 9,
             layers: [
                 L.tileLayer(grunnkart, {
                     maxZoom: 18,
+                    minZoom:7,
                     attribution: attribution_tag
                 }),
                 allcluster,
