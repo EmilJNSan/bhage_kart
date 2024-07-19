@@ -9,7 +9,7 @@ const marker_svart = "css/images/icon/marker-icon_park_svart.png";
 const marker_blaa = "css/images/icon/marker-icon_park_blaa.png";
 const shadow = "css/images/marker-shadow.png";
 
-const testtekst = "test ok"
+const testtekst = "test ok";
 const mc = [
     [59.046289508014254, 6.651780581972136],
     [58.85474301714041, 5.74084528545535],
