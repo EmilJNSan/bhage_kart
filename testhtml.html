@@ -20,7 +20,7 @@
     <div class="mapboks">
         <div id="map"></div>
     </div>
-    <script src="js/variabler_parkdata2.js"></script>
+    <script src="js/variables_bhage.js"></script>
     <script>
         console.log(testtekst)
 
@@ -90,12 +90,12 @@
                     attribution: attribution_tag
                 }),
                 alle_cluster,
-                veiparkeringsforbud
             ]
         });
+        polygon2.bindPopup("Parkering langs vei forbudt");
+        polygon.bindPopup("Parkering langs vei forbudt");
         veiparkeringsforbud.addLayer(polygon);
         veiparkeringsforbud.addLayer(polygon2);
-
         let overlays = {
             "Alle plasser": alle_cluster,
             "Ladeplasser":  lade_cluster,
@@ -108,4 +108,5 @@
     </script>
 </body>
 </html>
+
 
