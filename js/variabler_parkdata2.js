@@ -10,6 +10,8 @@ const marker_blaa = "marker-icon_park_blaa.png";
 const shadow = "marker-shadow.png";
 const testtekst = "test ok";
 
+var veiparkeringsforbud = L.layerGroup();
+
 var alle_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
