@@ -1,13 +1,13 @@
 const jsonUrl = "https://Laila72.github.io/Park_data/p_plasser_info.json";
-const direct = "";
+const direct = ""https://emiljnsan.github.io/bhage_kart/"";
 const grunnkart = "https://services.geodataonline.no/arcgis/rest/services/Geocache_WMAS_WGS84/GeocacheBasis/MapServer/tile/{z}/{y}/{x}";
 
 
 const attribution_tag = '©️ Geodata AS, Kartverket, Geovekst og kommunene, OpenStreetMap';
 
-const marker_svart = "marker-icon_park_svart.png";
-const marker_blaa = "marker-icon_park_blaa.png";
-const shadow = "marker-shadow.png";
+const marker_svart = "css/images/icon/marker-icon_park_svart.png";
+const marker_blaa = "css/images/icon/marker-icon_park_blaa.png";
+const shadow = "css/images/marker-shadow.png";
 const testtekst = "test ok";
 
 var veiparkeringsforbud = L.layerGroup();
