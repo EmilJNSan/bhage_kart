@@ -8,7 +8,7 @@ const attribution_tag = '©️ Geodata AS, Kartverket, Geovekst og kommunene, Op
 const marker_svart = "marker-icon_park_svart.png";
 const marker_blaa = "marker-icon_park_blaa.png";
 const shadow = "marker-shadow.png";
-const testtekst = "test ok"
+const testtekst = "test ok";
 
 var AllmarkerCluster = L.markerClusterGroup({
     maxClusterRadius: 55,
