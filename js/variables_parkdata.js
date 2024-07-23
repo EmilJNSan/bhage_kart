@@ -1,31 +1,30 @@
 const jsonUrl = "https://Laila72.github.io/Park_data/p_plasser_info.json";
 const direct = "https://emiljnsan.github.io/bhage_kart/";
 const grunnkart = "https://services.geodataonline.no/arcgis/rest/services/Geocache_WMAS_WGS84/GeocacheBasis/MapServer/tile/{z}/{y}/{x}";
+
+
 const attribution_tag = '©️ Geodata AS, Kartverket, Geovekst og kommunene, OpenStreetMap';
+
 const marker_svart = "css/images/icon/marker-icon_park_svart.png";
 const marker_blaa = "css/images/icon/marker-icon_park_blaa.png";
 const shadow = "css/images/marker-shadow.png";
-const testtekst = "test ok 2";
-const mc = [
-    [59.046289508014254, 6.651780581972136],
-    [58.85474301714041, 5.74084528545535],
-    [58.85360521633842, 5.739766638632233],
-    [58.850223151965054, 5.7344736541691645],
-    [58.84901015574755, 5.738068321265104]
-];
-var AllmarkerCluster = L.markerClusterGroup({
+const testtekst = "test ok";
+
+var veiparkeringsforbud = L.layerGroup();
+
+var alle_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
-var HCmarkerCluster = L.markerClusterGroup({
+var hc_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
-var MCmarkerCluster = L.markerClusterGroup({
+var mc_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
-var LADEmarkerCluster = L.markerClusterGroup({
+var lade_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
@@ -50,6 +49,15 @@ var mcikon = L.icon({
     iconSize: [25, 41],
     shadowSize: [25, 41]
 });
+
+const mc = [
+    [59.046289508014254, 6.651780581972136],
+    [58.85474301714041, 5.74084528545535],
+    [58.85360521633842, 5.739766638632233],
+    [58.850223151965054, 5.7344736541691645],
+    [58.84901015574755, 5.738068321265104]
+];
+
 
 const polygon = L.polygon([
     [58.85045738849249, 5.738747897670606],
@@ -115,6 +123,5 @@ const polygon2 = L.polygon([
     weight: 2,
     opacity: 0.7   
 });
-
 
 
