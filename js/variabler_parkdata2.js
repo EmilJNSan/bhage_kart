@@ -1,5 +1,5 @@
 const jsonUrl = "https://Laila72.github.io/Park_data/p_plasser_info.json";
-const direct = "/EPiServer/CMS/Content/globalassets/webredaktor/emil-test/";
+const direct = "";
 const grunnkart = "https://services.geodataonline.no/arcgis/rest/services/Geocache_WMAS_WGS84/GeocacheBasis/MapServer/tile/{z}/{y}/{x}";
 
 
@@ -10,19 +10,19 @@ const marker_blaa = "marker-icon_park_blaa.png";
 const shadow = "marker-shadow.png";
 const testtekst = "test ok";
 
-var AllmarkerCluster = L.markerClusterGroup({
+var alle_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
-var HCmarkerCluster = L.markerClusterGroup({
+var hc_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
-var MCmarkerCluster = L.markerClusterGroup({
+var mc_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
-var LADEmarkerCluster = L.markerClusterGroup({
+var lade_cluster = L.markerClusterGroup({
     maxClusterRadius: 55,
     disableClusteringAtZoom: 16
 });
