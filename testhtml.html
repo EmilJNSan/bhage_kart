@@ -61,11 +61,11 @@
                 `);
                 marker.data = plass;
                 markers.push(marker);
+                alle_cluster.addLayer(marker)
+                if(plass.aktivVersjon.antallLadeplasser >0){lade_cluster.addLayer(marker)}
+                if(plass.aktivVersjon.antallForflytningshemmede > 0){lade_cluster.addLayer(marker)}
             });
 
-                    alle_cluster.addLayer(marker)
-                    if(plass.aktivVersjon.antallLadeplasser >0){lade_cluster.addLayer(marker)}
-                    if(plass.aktivVersjon.antallForflytningshemmede > 0){lade_cluster.addLayer(marker)}
                     
                 };
 
