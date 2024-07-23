@@ -20,9 +20,20 @@
     <div class="mapboks">
         <div id="map"></div>
     </div>
-    <script src="https://emiljnsan.github.io/bhage_kart/js/variabler_parkdata2.js"></script>
+    <script src="https://emiljnsan.github.io/bhage_kart/js/variables_parkdata2.js"></script>
     <script>
         console.log(testtekst);
+        function load_mcmarker(mc) {
+            var mcMarkers = [];
+            mc.forEach(function(mcplass) {
+                var mcMarker = L.marker([mcplass[0], mcplass[1]], { icon: mcikon }).bindPopup(`
+                    <h2>MC-parkering</h2>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=${mcplass[0]},${mcplass[1]}" target="_blank">Veibeskrivelse</a> <br>
+                `);
+                mcMarkers.push(mcMarker);
+            });
+            return mcMarkers;
+        }
 
         function loadMarkers(data) {
             var markers = [];
@@ -91,24 +102,6 @@
 
         L.control.layers(overlays, null, {collapsed: false}).addTo(map);
 
-        function updateMarkers() {
-            MCmarkerCluster.clearLayers();
-            LADEmarkerCluster.clearLayers();
-            HCmarkerCluster.clearLayers();
-            AllmarkerCluster.clearLayers();
-
-            allMarkers.forEach(function (marker) {
-                var data = marker.data;
-                if (data.aktivVersjon.antallLadeplasser > 0) {
-                    LADEmarkerCluster.addLayer(marker);
-                }
-                if (data.aktivVersjon.antallForflytningshemmede > 0) {
-                    HCmarkerCluster.addLayer(marker);
-                }
-                AllmarkerCluster.addLayer(marker);
-            });
-            MCmarkerCluster.addLayers(mcMarkers);
-        }
     </script>
 </body>
 </html>
